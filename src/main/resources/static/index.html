@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oblig 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="jsCode.js" type="application/javascript"></script>
+  <style>
+    .feil {
+      color:red;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <form class="form-horizontal">
+    <h1 style="margin:20px">Bestilling av kinobiletter</h1>
+    <label class="control-label col-sm-2" for="film">Film:</label>
+    <div class="col-sm-10">
+      <select id="film" class="form-control">
+        <option value="">Velg film:</option>
+        <option value="Titanic">Titanic</option>
+        <option value="Fast & Forious 10">Fast & Forious 10</option>
+        <option value="Creed III">Creed III</option>
+        <option value="Avatar: The Way of Water">Avatar: The Way of Water</option>
+      </select>
+      <span id="feil_tittel" class="feil" style="visibility: hidden">Må velge en film</span>
+    </div>
+    <label class="control-label col-sm-2" for="antall">Antall:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="antall">
+      <span id="feil_antall" class="feil" style="visibility: hidden">Må skrive noe i antall</span>
+    </div>
+    <label class="control-label col-sm-2" for="fornavn">Fornavn:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="fornavn">
+      <span id="feil_fornavn" class="feil" style="visibility: hidden">Må skrive noe inn i fornavnet</span>
+    </div>
+    <label class="control-label col-sm-2" for="etternavn">Etternvavn:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="etternavn">
+      <span id="feil_etternavn" class="feil" style="visibility: hidden">Må skrive noe inn i etternavnet</span>
+    </div>
+    <label class="control-label col-sm-2" for="tlf_nr">Telefon:</label>
+    <div class="col-sm-10">
+      <input type="number" class="form-control" id="tlf_nr">
+      <span id="feil_tlf" class="feil" style="visibility: hidden">Må skrive noe inn telefonnr</span>
+    </div>
+    <label class="control-label col-sm-2" for="epost">E-post:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="epost">
+      <span id="feil_epost" class="feil" style="visibility: hidden">Må skrive noe inn i epost</span>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="bestillBiletter(event)">Kjøp bilett</button>
+  </form>
+  <div style="margin:25px" id="tabell"></div>
+  <p></p>
+  <button class="btn btn-danger" onclick="slettArray()">Slett alle biletter</button>
+</div>
+</body>
+</html>
