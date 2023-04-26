@@ -1,4 +1,4 @@
-package com.example.oblig_2_1700;
+package com.example.oblig3data1700;
 
 import com.example.oblig3data1700.Biletter;
 import com.example.oblig3data1700.BiletterRepository;

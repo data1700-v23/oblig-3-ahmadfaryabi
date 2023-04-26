@@ -24,7 +24,7 @@ public class BiletterRepository {
     }
 
     public void slettAlleBiletter() {
-        String sqlKode = "DELETE FROM Kunde";
+        String sqlKode = "DELETE FROM Biletter";
         database.update(sqlKode);
     }
 }
