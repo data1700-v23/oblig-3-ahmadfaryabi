@@ -2,6 +2,7 @@ package com.example.oblig3data1700;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.jdbc.config.JdbcNamespaceHandler;
 
 @SpringBootApplication
 public class Oblig3data1700Application {
